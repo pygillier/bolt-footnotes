@@ -1,0 +1,27 @@
+{
+    "name": "pygillier/footnotes",
+    "description": "Provides footnotes for inclusion in content",
+    "type": "bolt-extension",
+    "require": {
+        "bolt/bolt": ">=2.0.0,<3.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pierre-Yves Gillier", 
+            "email": "pierre-yves@gillier.name"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "init.php"
+        ],
+        "psr-4": {
+            "Bolt\\Extension\\pygillier\\footnotes\\": ""
+        }
+    },
+    
+    "extra": {
+        "bolt-assets": "assets"
+    }
+}
