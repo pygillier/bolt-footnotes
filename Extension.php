@@ -23,8 +23,13 @@ class Extension extends BaseExtension
         return "footnotes";
     }
     
-    public function footnotes($content) {
+    public function footnotes($content, $display=true) {
         $notes = array();
+        
+        if(!display)
+            echo "ON CACHE";
+        else 
+            echo "ON AFFICHE";
 
         $html = preg_replace_callback(
             self::$regex,  // pattern
